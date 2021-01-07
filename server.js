@@ -1,4 +1,15 @@
-const express * require('express');
+const express = require('express');
 const app = express();
 
-app.listen(3001, ())
+app.get('/', (req, res) =>{
+  res.status(200).send({message: 'Olá mundo estou funcionando!'});
+})
+
+app.get('/ola', (req, res) =>{
+  res.status(200).send({message: 'Oi eu sou a rota olá'});
+})
+
+app.listen(3001, () => {
+  console.log('Api rodando na porta 3001');
+  })
+© 2021 GitHub, Inc.
